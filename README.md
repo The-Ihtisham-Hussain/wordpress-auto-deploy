@@ -1,6 +1,3 @@
-# wordpress-auto-deploy
-Automated WordPress deployment toolkit for Linux servers with Apache, MySQL, and virtual host configuration.
-
 # WordPress Auto Deploy
 
 A Bash-based automation tool to deploy a complete WordPress site on an Ubuntu server with Apache, MariaDB, and PHP.
