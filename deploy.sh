@@ -33,9 +33,9 @@ sudo apt update -y
 log "Installing Apache..."
 sudo apt install apache2 -y
 
-# Install MariaDB
-log "Installing MariaDB..."
-sudo apt install mariadb-server -y
+# Install MySQL
+log "Installing MySQL..."
+sudo apt install mysql-server -y
 
 # Install PHP
 log "Installing PHP..."
@@ -44,6 +44,10 @@ sudo apt install php libapache2-mod-php php-mysql php-cli php-curl php-xml php-m
 # Enable Apache
 sudo systemctl enable apache2
 sudo systemctl start apache2
+
+# Enable MySQL
+sudo systemctl enable mysql
+sudo systemctl start mysql
 
 # Create database
 log "Creating database..."
