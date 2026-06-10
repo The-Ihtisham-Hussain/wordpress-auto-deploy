@@ -17,7 +17,7 @@ NC='\033[0m'
 
 # ---- Logging ----
 LOG_FILE="/var/log/wpdeploy.log"
-sudo touch "$LOG_FILE" 2>/dev/null || LOG_FILE="deployment.log"
+sudo touch "$LOG_FILE" 2>/dev/null && sudo chmod 666 "$LOG_FILE" 2>/dev/null || LOG_FILE="deployment.log"
 
 log() {
     echo -e "$(date '+%Y-%m-%d %H:%M:%S') : $1" | sudo tee -a "$LOG_FILE" > /dev/null
